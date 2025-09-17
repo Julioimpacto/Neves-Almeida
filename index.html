@@ -166,6 +166,43 @@
                 min-height: 800px;
             }
         }
+        
+        /* Ajustes específicos para dispositivos móveis - Card da citação */
+        @media (max-width: 768px) {
+            .citation-card {
+                left: -10px !important;
+                right: -10px !important;
+                bottom: -10px !important;
+                padding: 8px !important;
+            }
+            
+            .citation-card .bg-black {
+                padding: 8px 16px !important;
+            }
+        }
+        
+        /* Ajustes específicos para Galaxy Z Fold, Galaxy S8, iPhone SE */
+        @media (max-width: 480px) {
+            .citation-card {
+                left: -15px !important;
+                right: -15px !important;
+                bottom: -20px !important;
+            }
+        }
+        
+        /* Ajustes específicos para iPad Pro */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .citation-card {
+                left: -20px !important;
+                right: -20px !important;
+                bottom: -25px !important;
+                padding: 12px !important;
+            }
+            
+            .citation-card .bg-black {
+                padding: 12px 20px !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -562,13 +599,10 @@
                             <img src="imagens/tercio.jpg" alt="Especialidades - Direito Previdenciário, Sucessório, Imobiliário, Consumidor, Trabalhista e Penal" class="w-full h-auto object-contain rounded-lg">
                             
                             <!-- Citação sobreposta -->
-                            <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <div class="absolute bottom-0 left-0 right-0 p-4 citation-card">
                                 <div class="bg-black bg-opacity-70 rounded-lg p-2 md:p-6 max-w-full">
                                     <blockquote class="text-center italic text-white text-xs md:text-sm lg:text-base leading-relaxed">
-                                        "Advocacia é voz ativa, justiça em movimento e resultado transformador. É mais do que profissão, é missão! Cada processo é um campo de batalha, mas também um caminho de esperança: onde se alteram destinos."
-                                        <footer class="mt-3 text-xs md:text-sm font-semibold not-italic">
-                                            - Dr. Tércio Neves Almeida
-                                        </footer>
+                                        "Advocacia é voz ativa, justiça em movimento e resultado transformador. É mais do que profissão, é missão! Cada processo é um campo de batalha, mas também um caminho de esperança: onde se alteram destinos." (Dr. Tércio Neves Almeida)
                                     </blockquote>
                                 </div>
                             </div>
@@ -610,12 +644,12 @@
                     <div class="text-center group">
                         <div class="relative mb-6">
                             <div class="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 mx-auto modern-circle transition-all duration-300">
-                                <img src="imagens/tercio3.jpg" alt="Advogada Neves Almeida" class="w-full h-full object-cover">
+                                <img src="imagens/pietra.jpg" alt="Dra. Pietra Stähelin Pacheco" class="w-full h-full object-cover">
                             </div>
                         </div>
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Dr. Neves Almeida</h3>
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Dra. Pietra Stähelin Pacheco</h3>
                         <p class="text-white opacity-90 text-sm md:text-base leading-relaxed">
-                            Possui graduação em Direito pela Universidade Católica de Santos (2010) e graduação em Engenharia Civil pela Universidade Católica de Santos (1997). Especialização em Gestão Empresarial (UNISANTOS), Pós Graduação em Relações Internacionais (NUPRI/USP), MBA Gestão Portuária (POLI/USP). Advogada especializada em Fomento Mercantil, Recuperação de Créditos, Contratos, Recuperação Judicial e Falência, Direito do Consumidor e Propriedade Intelectual.
+                            Advogada especializada em Direito Previdenciário, com vasta experiência em processos administrativos e judiciais relacionados a benefícios previdenciários, aposentadorias e revisões de benefícios junto ao INSS.
                         </p>
                     </div>
                 </div>
@@ -642,6 +676,12 @@
                         <p class="text-white text-base md:text-lg leading-relaxed mb-3">
                             Rua Azevedo Sodré, 156 - cj 62 - Gonzaga - Santos - SP
                         </p>
+                        <!-- E-mail -->
+                        <div class="flex items-center justify-center mb-2">
+                            <i class="fas fa-envelope text-blue-400 mr-2 text-lg"></i>
+                            <span class="text-white text-base md:text-lg">tercio.almeida@adv.oabsp.org.br</span>
+                        </div>
+                        <!-- Telefone -->
                         <div class="flex items-center justify-center">
                             <i class="fas fa-phone text-blue-400 mr-2 text-lg"></i>
                             <a href="tel:1332853333" class="text-white hover:text-blue-400 transition-colors text-base md:text-lg">
@@ -651,24 +691,13 @@
                     </div>
                 </div>
                 
-                <!-- Instagram, E-mail, WhatsApp e Facebook -->
-                <div class="flex flex-row justify-center items-center gap-6 md:gap-12">
+                <!-- Instagram, WhatsApp e Facebook -->
+                <div class="flex flex-row justify-center items-center gap-8 md:gap-12">
                     <!-- Instagram -->
                     <div class="flex flex-col items-center text-center">
                         <div class="mb-4">
                             <a href="https://www.instagram.com/drtercionevesadv?igsh=c3JiZnF4dGFycG5u" target="_blank" class="transition-all duration-300 transform hover:scale-125 flex items-center">
                                 <img src="imagens/instagram.png" alt="Instagram" class="w-16 h-16">
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- E-mail -->
-                    <div class="flex flex-col items-center text-center">
-                        <div class="mb-4">
-                            <a href="mailto:contato@nevesalmeida.com.br" class="transition-all duration-300 transform hover:scale-125 flex items-center">
-                                <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-envelope text-white text-2xl"></i>
-                                </div>
                             </a>
                         </div>
                     </div>
@@ -698,7 +727,7 @@
     <!-- Footer -->
     <footer class="bg-black py-4 text-white text-sm sm:text-base">
         <div class="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 px-4 text-center relative">
-            <span>&copy; <span id="ano-atual"></span> Neves Almeida Advocacia. Todos os direitos reservados.</span>
+            <span>&copy; <span id="ano-atual"></span> Neves Almeida Advocacia.</span>
             <div class="flex items-center gap-1 mt-2 sm:mt-0">
                 <span>Produzido por:</span>
                 <img src="imagens/footerj3.png" alt="Logo J3" class="h-6 sm:h-8">
@@ -768,4 +797,6 @@
     </script>
 </body>
 </html>
+
+
 
